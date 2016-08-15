@@ -1,0 +1,6 @@
+- id: php-strict-types
+  name: PHP strict_types checker
+  description: Rejects staged PHP files which do not have a strict_types declaration
+  entry: pre_commit_hooks/php-strict-types.sh
+  language: script
+  files: \.php$
