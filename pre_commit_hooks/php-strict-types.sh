@@ -3,7 +3,7 @@ missing=()
 for x in "$@"; do
   if ! grep -q '^declare *(strict_types *= *1);$' $x; then
     missing+=($x)
-    sed -i 's/<?php/<?php declare(strict_types=1);/g' $x  
+    sed -i '' 's/<?php/<?php declare(strict_types=1);/g' $x  
   fi
 done
 
